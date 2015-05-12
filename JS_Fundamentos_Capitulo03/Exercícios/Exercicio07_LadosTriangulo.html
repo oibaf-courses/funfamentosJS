@@ -1,0 +1,47 @@
+<html>
+<head> 
+	<title>Definicao de Variaveis </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<h1> Teste para verificar se é un triangulo </h1>
+	<SCRIPT> 
+	/*
+	a+b > c
+	b+c > a
+	a+c > b
+	EX:
+	essas três relações devem ser válidas para todo triângulo.
+
+	verifiquemos então:
+
+	3+4 > 5 a (OK)
+	4+5 > 3 b (OK)
+	3+5 > 4 c (OK)
+
+	4+8 > 3 (OK)
+	3+8 > 4 (OK)
+	3+4 > 8 (FALSO)
+	*/
+
+	// Valor dos lados do Triangulo 
+	var ladoA = 3; 		
+	var ladoB = 4; 		
+	var ladoC = 8;  
+	
+	ladoBC = ladoB + ladoC
+	ladoAC = ladoA + ladoC
+	ladoAB = ladoA + ladoB
+
+	if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB)){
+		document.write( "É um Triângulo </br> ");
+		document.write( "<img src=\"./img/triangulo.png\">");
+	}else{
+		document.write( "NÃO É um Triângulo </br> ");
+		document.write( "<img src=\"./img/naoTriangulo.jpg\">");
+	}
+
+
+</SCRIPT> 
+</body>
+</html>

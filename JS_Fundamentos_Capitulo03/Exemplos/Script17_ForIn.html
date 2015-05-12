@@ -1,0 +1,19 @@
+<html>
+<head> 
+	<title>Exemplo For In </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<SCRIPT> 
+	cidades = {"a" : "Athens" , "b" : "Belgrade", "c" : "Cairo", "p" : "Porto Alegre" }
+	 
+	// Iterate over the properties.
+	var s = ""
+	for (var key in cidades) {
+	    	s += key + ": " + cidades[key];
+	    	s += "<br />";
+	    }
+	document.write (s);	 
+	</SCRIPT> 
+</body>
+</html>

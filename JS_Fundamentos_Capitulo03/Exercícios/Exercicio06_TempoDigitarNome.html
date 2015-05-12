@@ -1,0 +1,26 @@
+<html>
+<head> 
+	<title>Definicao de Variaveis </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<h1> Teste para digitação Nome completo</h1>
+	<SCRIPT> 
+	// defini o valor inicial em segundos
+		var inicio = Date.now();  
+	// abre um promt apra pegar o nome
+		var nomeCompleto = prompt("Digite seu nome completo?", "");  
+	// defini o valor final em segundos	
+		var fim = Date.now();
+	// defini o tempo em segundos da digitação
+		var tempo = (fim - inicio) / 1000; 
+	// Valida se o tempo foi ou não maior que 10s
+		if(tempo < 10 )
+			document.write("Você digitou em " + tempo + " segundos </br> " + nomeCompleto);
+		else {
+			dif = tempo - 10;
+			document.write("Seu tempo foi de " + tempo + " segundos, " + dif +" segundos acima de 10 segundos");
+		}
+	</SCRIPT> 
+</body>
+</html>

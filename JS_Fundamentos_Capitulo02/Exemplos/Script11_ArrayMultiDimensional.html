@@ -1,0 +1,40 @@
+<html>
+<head> 
+	<title> </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<SCRIPT> 
+	 var temperaturas_medias_cidade0 = new Array(3) 
+	 temperaturas_medias_cidade0[0] = 12 
+	 temperaturas_medias_cidade0[1] = 10 
+	 temperaturas_medias_cidade0[2] = 11 
+	  
+	 var temperaturas_medias_cidade1 = new Array (3) 
+	 temperaturas_medias_cidade1[0] = 5 
+	 temperaturas_medias_cidade1[1] = 0 
+	 temperaturas_medias_cidade1[2] = 2 
+	  
+	 var temperaturas_medias_cidade2 = new Array (3) 
+	 temperaturas_medias_cidade2[0] = 10 
+	 temperaturas_medias_cidade2[1] = 8 
+	 temperaturas_medias_cidade2[2] = 10 
+
+	 var temperaturas_cidades = new Array (3) 
+	 temperaturas_cidades[0] = temperaturas_medias_cidade0 
+	 temperaturas_cidades[1] = temperaturas_medias_cidade1 
+	 temperaturas_cidades[2] = temperaturas_medias_cidade2 
+
+	 document.write("<table width=200 border=1 cellpadding=1 cellspacing=1>"); 
+	 for (i=0;i<temperaturas_cidades.length;i++){ 
+	     document.write("<tr>") 
+	     document.write("<td><b>Cidade " + i + "</b></td>") 
+	     for (j=0;j<temperaturas_cidades[i].length;j++){ 
+	        document.write("<td>" + temperaturas_cidades[i][j] + "</td>") 
+	     } 
+	     document.write("</tr>") 
+	 } 
+	 document.write("</table>") 
+	</SCRIPT> 
+</body>
+</html>

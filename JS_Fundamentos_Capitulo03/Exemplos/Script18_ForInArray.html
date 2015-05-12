@@ -1,0 +1,23 @@
+<html>
+<head> 
+	<title>For In com Array </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<SCRIPT> 
+	 var listaGenerirca = new Array("zero","um","dois","três","quatro");
+
+	 listaGenerirca["carro"] = "Uno Mile";
+	 listaGenerirca["materia"] = "Matemática";
+
+ 	var s = "<table width=200 border=1 cellpadding=1 cellspacing=1>";
+	for (var chave in listaGenerirca) {
+	    s += "<tr>"
+	    s += "<td><b>"+chave + "</b></td><td>" + listaGenerirca[chave] + "</td>";
+	    s += "</tr>"
+	}
+ 
+	document.write (s);
+	</SCRIPT> 
+</body>
+</html>

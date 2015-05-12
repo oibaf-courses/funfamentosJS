@@ -1,0 +1,31 @@
+<html>
+<head> 
+	<title>Undefined</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<SCRIPT> 
+	var x;
+
+	// This method works.
+	if (x == undefined) {
+		document.write("x == undefined  ==> comparando x com undefined <br/>");
+		
+	}
+	
+	// This method doesn't work - you must check for the string "undefined".
+	if (typeof(x) == undefined) {
+		document.write("typeof(x) == undefined) ==> comparando o tipo x com undefined <br/>");
+	}
+
+	// This method does work. 
+	if (typeof(x) == "undefined") {
+		document.write("typeof(x) == \"undefined\" ==> comparando o tipo x com a string 'undefined'");
+	}
+
+	// Saídas
+	// comparando x com undefined <br/>
+	// comparando o tipo x com a string 'undefined'
+</SCRIPT> 
+</body>
+</html>
